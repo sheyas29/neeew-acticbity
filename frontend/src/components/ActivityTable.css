@@ -1,0 +1,87 @@
+.activity-section {
+  margin: 20px 0;
+}
+
+h2 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dark-mode h2 {
+  color: #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+.dark-mode table, .dark-mode th, .dark-mode td {
+  border: 1px solid #444;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.dark-mode th {
+  background-color: #444;
+}
+
+td {
+  background-color: #fff;
+}
+
+.dark-mode td {
+  background-color: #1e1e1e;
+}
+
+td input[type="checkbox"] {
+  transform: scale(1.5);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+td input[type="checkbox"]:checked {
+  background-color: #008080; /* Teal */
+  border-color: #008080; /* Teal */
+}
+
+.dark-mode td input[type="checkbox"]:checked {
+  background-color: #444;
+  border-color: #444;
+}
+
+@keyframes checkbox-checked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-checkbox {
+  animation: checkbox-checked 0.3s ease-in-out;
+}
+
+tr.checked {
+  background-color: #d4edda; /* Light green */
+}
+
+.dark-mode tr.checked {
+  background-color: #2d3e2d; /* Darker green for dark mode */
+}

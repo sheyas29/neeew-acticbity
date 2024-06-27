@@ -1,0 +1,47 @@
+.progress-bar-container-vertical {
+    position: fixed;
+    right: 20px;
+    top: 20%;
+    height: 500px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #e0e0df;
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .progress-bar-vertical {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .filler-vertical {
+    width: 100%;
+    background-color: #008080; /* Teal */
+    transition: height 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .label-vertical {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+  }
+  
+  .dark-mode .progress-bar-container-vertical {
+    background-color: #333;
+  }
+  
+  .dark-mode .filler-vertical {
+    background-color: #555;
+  }
+  
